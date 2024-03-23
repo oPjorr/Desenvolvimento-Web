@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soma de pares e ímpares</title>
+  </head>
+  <body></body>
+  <script>
+    let soma_pares = 0;
+    let soma_impares = 0;
+
+    for (let i = 1; i <= 100; i++) {
+      if (i % 2 == 0) {
+        soma_pares += i;
+      } else {
+        soma_impares += i;
+      }
+    }
+
+    alert(
+      `A soma dos números pares e ímpares de 1 à 100 é de ${soma_pares} e ${soma_impares}, respectivamente`
+    );
+  </script>
+</html>
