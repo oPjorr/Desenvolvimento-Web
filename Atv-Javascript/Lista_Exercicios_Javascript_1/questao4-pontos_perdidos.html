@@ -9,25 +9,26 @@
   <script>
     class Aluno {
       constructor(nota_inicial, tweets) {
-        this.nota_inicial = nota_inicial
-        this.tweets = tweets
+        this.nota_inicial = nota_inicial;
+        this.tweets = tweets;
       }
 
       calcular_nota_final() {
-        const pontos_perdidos = Math.floor(this.tweets / 100)
-        const nota_final = this.nota_inicial - pontos_perdidos
-        return nota_final
+        const pontos_perdidos = Math.floor(this.tweets / 100);
+        const nota_final = this.nota_inicial - pontos_perdidos;
+        return nota_final;
       }
     }
 
     function main() {
-      let nota_inicial = parseFloat(prompt("Informe a nota inicial do aluno: "))
-      let tweets = parseInt(prompt("Informe a quantidade de Tweets feitos: "))
+      let nota_inicial = parseFloat(
+        prompt("Informe a nota inicial do aluno: ")
+      );
+      let tweets = parseInt(prompt("Informe a quantidade de Tweets feitos: "));
 
-      const aluno1 = new Aluno(nota_inicial, tweets)
-
-      const nota_final = aluno1.calcular_nota_final()
-      alert(`A nota final do Aluno é de ${nota_final}`)
+      const aluno1 = new Aluno(nota_inicial, tweets);
+      const nota_final = aluno1.calcular_nota_final();
+      alert(`A nota final do Aluno é de ${nota_final}`);
     }
 
     main();
